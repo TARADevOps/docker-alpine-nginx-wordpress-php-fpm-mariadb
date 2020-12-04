@@ -1,4 +1,4 @@
-FROM nginx:1.15.10-alpine
+FROM nginx:stable-alpine
 
 RUN  apk add --upgrade --no-cache tzdata \
      && rm -rf /var/cache/apk/* /tmp/*

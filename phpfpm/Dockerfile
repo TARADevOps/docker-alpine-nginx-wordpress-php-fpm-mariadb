@@ -1,4 +1,4 @@
-FROM php:7.3.4-fpm-alpine3.9
+FROM php:7.4-fpm-alpine
 
 RUN apk add --upgrade --no-cache tzdata \
      && rm -rf /var/cache/apk/* /tmp/*
