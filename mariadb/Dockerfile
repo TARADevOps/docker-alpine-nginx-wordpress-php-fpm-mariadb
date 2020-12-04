@@ -1,11 +1,9 @@
-FROM alpine:3.9
-
-MAINTAINER Sonny Yu <sonnyyuirm@gmail.com>
+FROM alpine:3.12
 
 RUN apk add --no-cache mariadb mariadb-client mariadb-server-utils pwgen tzdata && \
     rm -f /var/cache/apk/* /tmp/*
     
-ENV  TZ=America/Los_Angeles
+ENV  TZ=Europe/Bucharest
 
 ADD install.sh /scripts/install.sh
 ADD world.sql  /scripts/world.sql
